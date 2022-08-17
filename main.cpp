@@ -6,11 +6,6 @@
 #include <libserial/SerialStream.h>
 
 //define area
-
-#define GP
-#define SC
-#define SG
-
 #define OUTPUT(input) cout<<"RX: "<<input<<endl
 
 #ifdef GP
@@ -95,5 +90,5 @@ int main(){
 
 //function definition
 void signal_handler(int signum){
-    printf("プログラムを終了します");
+    printf("finish the program");
 }
