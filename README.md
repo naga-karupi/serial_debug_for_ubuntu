@@ -1,0 +1,2 @@
+# serial_debug_for_ubuntu
+シリアル通信でデバッグできるようにしたよ
