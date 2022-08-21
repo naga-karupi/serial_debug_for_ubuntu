@@ -24,17 +24,20 @@ SG:
 	make -C $(SG_DIR) --no-print-directory
 
 .PHONY: GP_exe
-GP_exe: 
+GP_exe:
+	make clean
 	cmake -S . -B build -DGP=true
 	make -C build --no-print-directory
 
 .PHONY: SC_exe
 SC_exe:
+	make clean
 	cmake -S . -B build -DSC=true
 	make -C build --no-print-directory
 
 .PHONY:SG_exe
 SG_exe:
+	make clean
 	cmake -S . -B build -DSG=true
 	make -C build --no-print-directory
 
