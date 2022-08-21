@@ -3,7 +3,6 @@
 #include <string>
 #include <signal.h>
 
-#include "general_purpose_lib/loop_class.hpp"
 #include "serial_graph/serial_graph.hpp"
 
 //define area
@@ -11,3 +10,15 @@
 
 //using namespace
 using namespace std;
+
+int main(){
+// change area ================================================
+    constexpr size_t RX_num = 0;
+    string str{"USB_NAME"};
+//=============================================================
+
+    LibSerial::SerialStream serial;
+
+    serial_init(serial, str, LibSerial::BaudRate::BAUD_115200);
+    serial_plot(serial, RX_num);
+}

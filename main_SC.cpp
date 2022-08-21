@@ -23,7 +23,7 @@ int main(){
     SerialStream serial;
 
 // change area ================================================
-    constexpr size_t RX_size = 8;
+    constexpr size_t RX_size = ;
     char RX_buff [] = "";
     string str{"USB_NAME"};
 //=============================================================

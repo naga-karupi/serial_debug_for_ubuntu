@@ -23,9 +23,11 @@ endif()
 
 if(SG)
     add_subdirectory(serial_graph)
+    add_subdirectory(graph_plot)
+    add_subdirectory(serial_communication)
     add_executable(main main_SG.cpp)
-    target_link_libraries(main general_purpose)
     target_link_libraries(main serial_graph)
+    target_link_libraries(main serial)
 endif()
 
 target_compile_features(main PUBLIC cxx_std_20)
